@@ -1,6 +1,6 @@
 """
-Base working model — Spotify Genre Classification MLP
-AI 100 Final Project — Marco King
+Base working model: Spotify Genre Classification MLP
+AI 100 Final Project, Marco King
 """
 import pandas as pd
 import numpy as np

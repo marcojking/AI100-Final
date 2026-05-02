@@ -1,4 +1,4 @@
-"""Bug 06: Learning rate = 10.0 — loss explodes to NaN"""
+"""Bug 06: Learning rate = 10.0, loss explodes to NaN"""
 import pandas as pd, numpy as np, torch, torch.nn as nn
 from torch.utils.data import DataLoader, TensorDataset
 from sklearn.model_selection import train_test_split
@@ -68,5 +68,5 @@ for epoch in range(EPOCHS):
         acc = (preds == y_test_t).float().mean().item()
     print(f"Epoch {epoch+1}/{EPOCHS}  loss={avg_loss:.4f}  test_acc={acc:.4f}")
     if str(avg_loss) == 'nan':
-        print("Loss is NaN — training has diverged.")
+        print("Loss is NaN, training has diverged.")
         break

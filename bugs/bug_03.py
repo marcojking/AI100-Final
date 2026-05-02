@@ -1,4 +1,4 @@
-"""Bug 03: Missing optimizer.zero_grad() — gradients accumulate"""
+"""Bug 03: Missing optimizer.zero_grad(), gradients accumulate"""
 import pandas as pd, numpy as np, torch, torch.nn as nn
 from torch.utils.data import DataLoader, TensorDataset
 from sklearn.model_selection import train_test_split

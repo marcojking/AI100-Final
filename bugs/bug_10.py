@@ -61,7 +61,7 @@ for epoch in range(EPOCHS):
         loss.backward()
         optimizer.step()
         total_loss += loss.item()
-    # evaluation (also in eval mode — same as training here, so no difference in eval step)
+    # evaluation (also in eval mode, same as training here, so no difference in eval step)
     with torch.no_grad():
         preds = torch.argmax(model(X_test_t), dim=1)
         acc = (preds == y_test_t).float().mean().item()

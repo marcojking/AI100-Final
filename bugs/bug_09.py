@@ -1,4 +1,4 @@
-"""Bug 09: Model output_size=9 with 10 classes — index out of bounds"""
+"""Bug 09: Model output_size=9 with 10 classes, index out of bounds"""
 import pandas as pd, numpy as np, torch, torch.nn as nn
 from torch.utils.data import DataLoader, TensorDataset
 from sklearn.model_selection import train_test_split

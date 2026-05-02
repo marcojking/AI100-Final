@@ -1,4 +1,4 @@
-"""Bug 07: Remove ReLU activations — model becomes effectively linear"""
+"""Bug 07: Remove ReLU activations, model becomes effectively linear"""
 import pandas as pd, numpy as np, torch, torch.nn as nn
 from torch.utils.data import DataLoader, TensorDataset
 from sklearn.model_selection import train_test_split

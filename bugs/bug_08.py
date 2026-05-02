@@ -1,4 +1,4 @@
-"""Bug 08: Model built with input_size=12 but fed 13 features — shape mismatch"""
+"""Bug 08: Model built with input_size=12 but fed 13 features, shape mismatch"""
 import pandas as pd, numpy as np, torch, torch.nn as nn
 from torch.utils.data import DataLoader, TensorDataset
 from sklearn.model_selection import train_test_split
